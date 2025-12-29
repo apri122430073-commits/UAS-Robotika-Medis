@@ -1,2 +1,2 @@
-# UAS-Robotika-Medis
+# SMART PRESSURE ALERT SYSTEM
 Sistem nurse call sederhana menggunakan sensor FSR sebagai pendeteksi tekanan, ESP32 sebagai pengendali, dan buzzer sebagai notifikasi suara.
