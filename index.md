@@ -118,7 +118,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
 
 <section>
 
-<header>
+<section>
 <h2>Tahap I - Environment Setup</h2>
   <p>
     Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak
@@ -280,6 +280,7 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
   <li>Pastikan tidak ada error koneksi</li>
 </ul>
 
+<section>
    <h2>TAHAP III – Arduino Programming</h2>
    <p>
   Tahap ini bertujuan untuk memprogram ESP32 agar dapat membaca data tekanan dari sensor Force Sensitive Resistor (FSR)
@@ -322,6 +323,7 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
 <p><strong>Catatan:</strong> Buzzer berfungsi sebagai alarm peringatan dini untuk membantu tenaga medis mendeteksi kondisi tekanan  pada pasien secara cepat.</p>
 </section>
 
+<section>
 <!-- Tahap IV -->
 <section>
  <h2>TAHAP IV – Implementasi Logic Node</h2>
