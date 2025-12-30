@@ -384,7 +384,6 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
  <img src="images/gambar25.png"> 
 </section>
 
-<section>
   <h2>Troubleshooting & Problem Solving</h2>
  <p>
   ⚠️ Tahap ini bertujuan untuk mengidentifikasi dan menangani permasalahan yang muncul selama proses
