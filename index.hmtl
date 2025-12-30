@@ -122,13 +122,13 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     ROS 2 secara optimal.
   </p>
 
-  <h3>1. Menyiapkan Sistem Operasi Utama (Windows 11)</h3>
+  <b>1. Menyiapkan Sistem Operasi Utama (Windows 11)</b>
   <p>
     Windows 11 digunakan sebagai host system (sistem utama) untuk menjalankan
     seluruh proses pengembangan.
   </p>
     Fungsi Utama:
-  <ul>
+
   <p> 
     <li>Menjalankan Arduino IDE</li>
     <li>Menjalankan Docker Desktop</li>
@@ -138,13 +138,12 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     dan RAM minimal 8 GB.
   </p>
 
-  <h3>2. Mengaktifkan WSL 2 (Windows Subsystem for Linux)</h3>
+  <b>2. Mengaktifkan WSL 2 (Windows Subsystem for Linux)</b>
   <p>
     WSL 2 memungkinkan menjalankan sistem operasi Linux langsung di dalam
     Windows tanpa dual boot.
   </p>
-  Langkah-langkah:
-  <ul>
+<p>Langkah-langkah:</p>
   <p>
     <li>Buka PowerShell sebagai Administrator</li>
     <li>Jalankan perintah aktivasi WSL</li>
