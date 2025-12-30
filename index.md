@@ -118,6 +118,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
 
 <section>
 
+<header>
 <h2>Tahap I - Environment Setup</h2>
   <p>
     Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak
