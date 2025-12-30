@@ -132,10 +132,12 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     seluruh proses pengembangan.
   </p>
     <p>Fungsi Utama:</p>
+  <ul>
   <p> 
     <li>Menjalankan Arduino IDE</li>
     <li>Menjalankan Docker Desktop</li>
     <li>Menjalankan WSL 2 sebagai jembatan ke Linux</li>
+  </ul>
   </p>
     <b>Catatan:</b> Pastikan Windows sudah ter-update, virtualisasi aktif di BIOS,
     dan RAM minimal 8 GB.
@@ -155,7 +157,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Lakukan restart sistem komputer</li>
     <li>Pastikan WSL menggunakan versi 2</li>
     <img src="images/Gambar2.png">  
-
+  </p>
   <p>3. Instalasi Ubuntu 24.04 LTS</p>
   <p>
     Ubuntu digunakan sebagai sistem operasi Linux utama untuk menjalankan ROS 2.
@@ -166,7 +168,9 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Unduh Ubuntu 24.04 LTS melalui Microsoft Store</li>
     <li>Lakukan Instal dan jalankan</li>
     <li>Buat username dan password pada Linux</li>
-
+  </p>
+  </ul>
+    
   <p>4. Update Sistem Ubuntu</p>
   <p>
     Update sistem dilakukan untuk memastikan seluruh package berada pada versi
@@ -177,7 +181,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <p><i>
   <img src="images/Gambar3.png">
 
-  <h3>5. Instalasi ROS 2 Jazzy Jalisco</h3>
+<p> 5. Instalasi ROS 2 Jazzy Jalisco </p>
   <p>
     ROS 2 digunakan sebagai middleware komunikasi antara node publisher dan
     subscriber.
@@ -194,8 +198,9 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Melakukan setup environment</li>
     <img src="images/gambar7.png">
   </ul>
+  </p>
 
-  <h3>6. Instalasi Docker Desktop</h3>
+  <p>6. Instalasi Docker Desktop</p>
   <p>
     Docker digunakan untuk menjalankan micro-ROS agent secara terisolasi.
   </p>
@@ -205,8 +210,10 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Unduh Docker Desktop for Windows</li>
     <li>Lakukan instalasi dan restart jika diperlukan</li>
     <img src="images/gambar8.png">
+  </ul>
+  </p>
 
-  <h3>7. Menjalankan micro-ROS Agent</h3>
+  <p>7. Menjalankan micro-ROS Agent</p>
   <p>
     Micro-ROS Agent berfungsi sebagai penghubung antara mikrokontroler ESP32
     dan ROS 2.
@@ -215,8 +222,10 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <ul>
   <p>
   <img src="images/gambar9.png">
+  </ul>
+  </p>
 
-  <h3>8. Instalasi Arduino IDE</h3>
+  <p>8. Instalasi Arduino IDE</p>
   <p>
     Arduino IDE digunakan untuk pemrograman ESP32 dan pembacaan sensor FSR.
   </p>
@@ -226,8 +235,10 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Instalasi Arduino IDE</li>
     <li>Penambahan board ESP32</li>
     <li>Instalasi library pendukung sensor FSR</li>
+  </ul>
+  </p>
 
-  <h3>9. Instalasi Python</h3>
+  <p>9. Instalasi Python</p>
   <p>
     Python digunakan untuk pengembangan node ROS 2 dan monitoring data sensor.
   </p>
@@ -239,6 +250,8 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   Jika belum, lakukan:
   <p>
    <img src="images/gambar11.png">
+  </p>
+  </ul>
 
 <h2>Tahap II – Perakitan dan Persiapan Perangkat Keras</h2>
 
