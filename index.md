@@ -442,7 +442,7 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
 <section>
   <h2>Dokumentasi</h2>
    <img src="images/gambar27.jpeg"> 
-   <img src="images/video1.mp4"> 
+   <source src="video/video1.mp4" type="video/mp4"> 
  </p> 
     
 </body>
