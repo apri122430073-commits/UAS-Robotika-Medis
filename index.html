@@ -146,6 +146,142 @@
 </section>
 
 <section>
+  <h2>Tahap I - Environment Setup</h2>
+  <p>
+    Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak
+    agar sistem dapat dikembangkan, dijalankan, dan diintegrasikan dengan
+    ROS 2 secara optimal.
+  </p>
+
+  <p><b>1. Menyiapkan Sistem Operasi Utama (Windows 11)</b></p>
+  <p>
+    Windows 11 digunakan sebagai host system (sistem utama) untuk menjalankan
+    seluruh proses pengembangan.
+  </p>
+    Fungsi Utama:
+  <ul>
+  <p> 
+    <li>Menjalankan Arduino IDE</li>
+    <li>Menjalankan Docker Desktop</li>
+    <li>Menjalankan WSL 2 sebagai jembatan ke Linux</li>
+  <p>
+    <b>Catatan:</b> Pastikan Windows sudah ter-update, virtualisasi aktif di BIOS,
+    dan RAM minimal 8 GB.
+  </ul>
+  </p>
+
+  <p><b>2. Mengaktifkan WSL 2 (Windows Subsystem for Linux)</b></p>
+  <p>
+    WSL 2 memungkinkan menjalankan sistem operasi Linux langsung di dalam
+    Windows tanpa dual boot.
+  </p>
+ <p>Langkah-langkah:</p> 
+  <ul>
+  <p>
+    <li>Buka PowerShell sebagai Administrator</li>
+    <li>Jalankan perintah aktivasi WSL</li>
+    <img src="images/gambar1.png">
+    <li>Lakukan restart sistem komputer</li>
+    <li>Pastikan WSL menggunakan versi 2</li>
+    <img src="images/Gambar2.png">  
+  </ul>
+</p>
+
+  <p><b>3. Instalasi Ubuntu 24.04 LTS</b></p>
+  <p>
+    Ubuntu digunakan sebagai sistem operasi Linux utama untuk menjalankan ROS 2.
+  </p>
+   <p>Langkah-Langkah:</p> 
+  <ul>
+  <p>
+    <li>Unduh Ubuntu 24.04 LTS melalui Microsoft Store</li>
+    <li>Lakukan Instal dan jalankan</li>
+    <li>Buat username dan password pada Linux</li>
+  </ul>
+  </p>
+  <p>4. Update Sistem Ubuntu</p>
+  <p>
+    Update sistem dilakukan untuk memastikan seluruh package berada pada versi
+    terbaru sebelum instalasi ROS 2.
+  </p>
+    Kode:
+  <ul>
+  <p><i>
+  <img src="images/Gambar3.png">
+
+  <p><b>5. Instalasi ROS 2 Jazzy Jalisco</b></p>
+  <p>
+    ROS 2 digunakan sebagai middleware komunikasi antara node publisher dan
+    subscriber.
+  </ul>
+  </p>
+ <p>Langkah-langkah:</p> 
+  <ul>
+  <p>
+    <li>Menambahkan locale sistem</li>
+    <img src="images/gambar4.png">
+    <li>Menambahkan repository resmi ROS 2</li>
+    <img src="images/gambar5.png">
+    <li>Menginstal ROS 2 Jazzy Jalisco</li>
+    <img src="images/gambar6.png">
+    <li>Melakukan setup environment</li>
+    <img src="images/gambar7.png">
+  </p>
+  </ul>
+
+  <p><b>6. Instalasi Docker Desktop</b></p>
+  <p>
+    Docker digunakan untuk menjalankan micro-ROS agent secara terisolasi.
+  </p>
+ <p>Langkah-langkah:</p> 
+  <ul>
+  <p>
+    <li>Unduh Docker Desktop for Windows</li>
+    <li>Lakukan instalasi dan restart jika diperlukan</li>
+    <img src="images/gambar8.png">
+  </ul>
+  </p>
+
+  <p><b>7. Menjalankan micro-ROS Agen</b>t</p>
+  <p>
+    Micro-ROS Agent berfungsi sebagai penghubung antara mikrokontroler ESP32
+    dan ROS 2.
+  </p>
+  <p>Jalankan container:</p>
+  <ul>
+  <p>
+  <img src="images/gambar9.png"></p>
+  </ul>
+  <p><b>8. Instalasi Arduino IDE</b></p>
+  <p>
+    Arduino IDE digunakan untuk pemrograman ESP32 dan pembacaan sensor FSR.
+  </p>
+   <p>Langkah-langkah:</p>
+  <ul>
+  <p>
+    <li>Instalasi Arduino IDE</li>
+    <li>Penambahan board ESP32</li>
+    <li>Instalasi library pendukung sensor FSR</li>
+  </ul>
+  </p>
+    
+  <p><b>9. Instalasi Python</b></p>
+  <p>
+    Python digunakan untuk pengembangan node ROS 2 dan monitoring data sensor.
+  </p>
+   <p>Pastikan Pyhton terinstal:</p> 
+  <ul>
+  <p>
+    <img src="images/gambar10.png"> 
+  </p>
+  Jika belum, lakukan:
+  <p>
+   <img src="images/gambar11.png">
+  </p>
+  </ul>
+</section>
+
+<section>
   <h2>TAHAP II – Perakitan Perangkat Keras</h2>
   <ul>
     <li>ESP32</li>
@@ -170,19 +306,65 @@
 </section>
 
 <section>
-  <h2>TAHAP IV – Implementasi ROS 2 Logic Node</h2>
-  <img src="images/gambar18.png" alt="Logic Node">
+ <h2>TAHAP IV – Implementasi Logic Node</h2>
+  <p>
+    Tahap ini menjelaskan langkah-langkah membuat dan menjalankan Logic Node pada ROS 2
+     untuk mengelola tekanan serta mengaktifkan alarm jika terdapat tekanan pada sensor.
+ </p>
+
+ <p><b>1. Buka Terminal Ubuntu & Aktifkan ROS 2</b></p>
+ <p>
+ Jalankan perintah berikut setiap membuka terminal baru:
+ <img src="images/gambar14.png"> 
+ </p>
+    
+  <p><b>2. Buat ROS 2 Workspace</b></p>
+ <img src="images/gambar15.png"> 
+ </p>
+
+ <p><b>3. Buat Package ROS 2 (Python)</b></p>
+<p> <img src="images/gambar16.png"></p>
+
+ <h3>4. Masuk ke Folder Package</h3>
+  <img src="images/gambar17.png"> 
+ </p>
+
+ <h3>5. Buat File Python Logic Node</h3>
+  <img src="images/gambar18.png"> 
+ </p>
+
+ <h3>6. Script Python (Logic Node)</h3>
+  <img src="images/phyton1.png"> 
+   <img src="images/phyton2.png"> 
+ </p>
+   
+  <h3>7. Edit <code>setup.py</code> agar Node Bisa Dijalankan</h3>
+   <img src="images/gambar19.png">
+   <p>
+ Tambahkan pada bagian entry_points:
+ <img src="images/gambar20.png"> 
+ </p>
+
+<h3>8. Build Ulang Workspace</h3>
+ <img src="images/gambar21.png"> 
+ </p>
+
+ <h3>9. Jalankan Logic Node</h3>
+  <img src="images/gambar22.png"> 
+ </p>
+
+ <h3>10. Uji Node (Manual dari Terminal)</h3>
+  <p>Kirim data tekanan:</p>
+   <img src="images/gambar23.png"> 
+ </p> 
+  
+ <p>Cek status tekanan:</p>
+ <img src="images/gambar26.png"> 
+
+ <p>Cek alarm:</p>
+ <img src="images/gambar25.png"> 
 </section>
 
-<section>
-  <h2>Troubleshooting</h2>
-
-  <ul>
-    <li>Pastikan board ESP32 terdeteksi di Arduino IDE</li>
-    <li>Periksa topic ROS 2 aktif</li>
-    <li>Kalibrasi nilai threshold FSR</li>
-  </ul>
-</section>
 
 <section>
   <h2>Dokumentasi</h2>
