@@ -442,11 +442,7 @@ serta memberikan peringatan otomatis melalui buzzer ketika tekanan melebihi amba
 <section>
   <h2>Dokumentasi</h2>
    <img src="images/gambar27.jpeg"> 
-
-   <video width="640" controls>
-  <source src="videos/video1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<img src="images/video1.mp4">
  </p> 
     
 </body>
