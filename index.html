@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Pressure Alert System</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #6a6fd1, #7c7fd9);
+      color: white;
+      line-height: 1.8;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .tags {
+      margin-top: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      padding: 8px 16px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    section {
+      background: rgba(255,255,255,0.12);
+      margin: 30px;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 10px;
+    }
+
+    img, video {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 15px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>SMART PRESSURE ALERT SYSTEM</h1>
+  <p>Sistem Monitoring Tekanan Berbasis ROS 2 Menggunakan Sensor FSR</p>
+
+  <div class="tags">
+    <span class="tag">ESP32</span>
+    <span class="tag">ROS 2</span>
+    <span class="tag">FSR Sensor</span>
+    <span class="tag">Buzzer</span>
+    <span class="tag">Robotika Medis</span>
+  </div>
+</header>
+
+<section>
+  <h2>Profil Anggota Kelompok</h2>
+  <p>
+    <strong>Nama:</strong> Apri Ayu Lia<br>
+    <strong>Program Studi:</strong> Teknik Biomedis<br>
+    <strong>Institusi:</strong> Institut Teknologi Sumatera (ITERA)<br>
+    <strong>Mata Kuliah:</strong> Robotika Medis
+  </p>
+</section>
+
+<section>
+  <h2>Pendahuluan</h2>
+  <p>
+    Pemantauan kondisi pasien secara berkelanjutan merupakan aspek krusial
+    dalam pelayanan kesehatan, khususnya pada pasien dengan mobilitas terbatas.
+    Tekanan berlebih akibat posisi statis dapat menyebabkan luka tekan
+    (pressure ulcer).
+  </p>
+  <p>
+    Smart Pressure Alert System dikembangkan menggunakan sensor
+    Force Sensitive Resistor (FSR) dan buzzer sebagai peringatan dini.
+    Integrasi dengan ROS 2 memungkinkan pemantauan real-time dan
+    pengolahan data lebih lanjut.
+  </p>
+</section>
+
+<section>
+  <h2>Pentingnya Smart Pressure Alert System</h2>
+
+  <h3>Tekanan Berlebih pada Pasien</h3>
+  <p>
+    Pasien dengan keterbatasan gerak berisiko mengalami tekanan berlebih
+    akibat posisi statis dalam waktu lama.
+  </p>
+
+  <h3>Keterbatasan Pemantauan Manual</h3>
+  <p>
+    Pemantauan manual tidak dapat dilakukan secara kontinu dan sangat
+    bergantung pada tenaga medis.
+  </p>
+
+  <h3>Sistem Peringatan Dini</h3>
+  <p>
+    Sistem ini memberikan peringatan otomatis menggunakan buzzer
+    saat tekanan melebihi ambang batas.
+  </p>
+</section>
+
+<section>
+  <h2>Diagram Alir Sistem</h2>
+  <img src="images/gambar13.png" alt="Diagram Alir Sistem">
+</section>
+
+<section>
+  <h2>Alat dan Bahan</h2>
+
+  <h3>Perangkat Keras</h3>
+  <img src="images/tabel2.png" alt="Tabel Hardware">
+
+  <h3>Perangkat Lunak</h3>
+  <img src="images/tabel1.png" alt="Tabel Software">
+</section>
+
+<section>
+  <h2>TAHAP II – Perakitan Perangkat Keras</h2>
+  <ul>
+    <li>ESP32</li>
+    <li>Sensor FSR</li>
+    <li>Buzzer</li>
+    <li>Resistor ±10 kΩ</li>
+    <li>Breadboard & Kabel Jumper</li>
+  </ul>
+
+  <h3>Wiring Diagram</h3>
+  <img src="images/gambar12.png" alt="Wiring Diagram">
+</section>
+
+<section>
+  <h2>TAHAP III – Arduino Programming</h2>
+  <p>
+    ESP32 diprogram untuk membaca sensor FSR dan mengaktifkan buzzer
+    ketika tekanan terdeteksi.
+  </p>
+
+  <img src="images/gambar28.png" alt="Kode Arduino">
+</section>
+
+<section>
+  <h2>TAHAP IV – Implementasi ROS 2 Logic Node</h2>
+  <img src="images/gambar18.png" alt="Logic Node">
+</section>
+
+<section>
+  <h2>Troubleshooting</h2>
+
+  <ul>
+    <li>Pastikan board ESP32 terdeteksi di Arduino IDE</li>
+    <li>Periksa topic ROS 2 aktif</li>
+    <li>Kalibrasi nilai threshold FSR</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Dokumentasi</h2>
+  <img src="images/gambar27.jpeg" alt="Dokumentasi Alat">
+  <video controls>
+    <source src="images/video1.mp4" type="video/mp4">
+    Browser tidak mendukung video.
+  </video>
+</section>
+
+</body>
+</html>
