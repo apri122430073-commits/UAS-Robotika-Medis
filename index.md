@@ -126,23 +126,22 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     ROS 2 secara optimal.
   </p>
 
-  <h3>1. Menyiapkan Sistem Operasi Utama (Windows 11)</h3>
+  <p>1. Menyiapkan Sistem Operasi Utama (Windows 11)</p>
   <p>
     Windows 11 digunakan sebagai host system (sistem utama) untuk menjalankan
     seluruh proses pengembangan.
   </p>
-    Fungsi Utama:
-  <ul>
+    <p>Fungsi Utama:</p>
   <p> 
     <li>Menjalankan Arduino IDE</li>
     <li>Menjalankan Docker Desktop</li>
     <li>Menjalankan WSL 2 sebagai jembatan ke Linux</li>
-  <p>
+  </p>
     <b>Catatan:</b> Pastikan Windows sudah ter-update, virtualisasi aktif di BIOS,
     dan RAM minimal 8 GB.
   </p>
 
-  <h3>2. Mengaktifkan WSL 2 (Windows Subsystem for Linux)</h3>
+  <p>2. Mengaktifkan WSL 2 (Windows Subsystem for Linux)</p>
   <p>
     WSL 2 memungkinkan menjalankan sistem operasi Linux langsung di dalam
     Windows tanpa dual boot.
@@ -157,7 +156,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Pastikan WSL menggunakan versi 2</li>
     <img src="images/Gambar2.png">  
 
-  <h3>3. Instalasi Ubuntu 24.04 LTS</h3>
+  <p>3. Instalasi Ubuntu 24.04 LTS</p>
   <p>
     Ubuntu digunakan sebagai sistem operasi Linux utama untuk menjalankan ROS 2.
   </p>
@@ -168,7 +167,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
     <li>Lakukan Instal dan jalankan</li>
     <li>Buat username dan password pada Linux</li>
 
-  <h3>4. Update Sistem Ubuntu</h3>
+  <p>4. Update Sistem Ubuntu</p>
   <p>
     Update sistem dilakukan untuk memastikan seluruh package berada pada versi
     terbaru sebelum instalasi ROS 2.
