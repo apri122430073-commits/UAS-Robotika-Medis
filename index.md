@@ -110,6 +110,13 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <p>
 </section>
 
+ <section> 
+<h2>Diagram Alir Sistem</h2>
+  <p>
+  <img src="images/gambar13.png">
+  <p>
+</section>
+
   <h2>Alat dan Bahan</h2>
   <h3>Perangkat Keras (Hardware)</h3>
   <p>
@@ -119,6 +126,7 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <p>
   <img src="images/tabel1.png">
 
+<section></section>
 <h2>Tahap I - Environment Setup</h2>
   <p>
     Tahap ini bertujuan untuk menyiapkan lingkungan kerja perangkat lunak
