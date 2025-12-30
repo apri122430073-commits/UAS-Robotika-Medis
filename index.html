@@ -208,12 +208,13 @@
   <ul>
   <p><i>
   <img src="images/Gambar3.png">
+  </i></p>
+  </ul>
 
   <p><b>5. Instalasi ROS 2 Jazzy Jalisco</b></p>
   <p>
     ROS 2 digunakan sebagai middleware komunikasi antara node publisher dan
     subscriber.
-  </ul>
   </p>
  <p>Langkah-langkah:</p> 
   <ul>
@@ -325,38 +326,90 @@
  <p><b>3. Buat Package ROS 2 (Python)</b></p>
 <p> <img src="images/gambar16.png"></p>
 
- <h3>4. Masuk ke Folder Package</h3>
-  <img src="images/gambar17.png"> 
+ <p><b>4. Masuk ke Folder Package</b></p>
+ <p> <img src="images/gambar17.png"> </p>
+
+ <p><b>5. Buat File Python Logic Node</b></p>
+ <p> <img src="images/gambar18.png"> 
  </p>
 
- <h3>5. Buat File Python Logic Node</h3>
-  <img src="images/gambar18.png"> 
- </p>
-
- <h3>6. Script Python (Logic Node)</h3>
-  <img src="images/phyton1.png"> 
+ <p><b>6. Script Python (Logic Node)</b></p>
+  <p><img src="images/phyton1.png"> 
    <img src="images/phyton2.png"> 
  </p>
    
-  <h3>7. Edit <code>setup.py</code> agar Node Bisa Dijalankan</h3>
-   <img src="images/gambar19.png">
-   <p>
- Tambahkan pada bagian entry_points:
- <img src="images/gambar20.png"> 
- </p>
+ <p><b>7. Edit <code>setup.py</code> agar Node Bisa Dijalankan</b></p>
+<img src="images/gambar19.png" alt="Edit setup.py">
 
-<h3>8. Build Ulang Workspace</h3>
- <img src="images/gambar21.png"> 
- </p>
+<p>Tambahkan pada bagian <code>entry_points</code>:</p>
+<img src="images/gambar20.png" alt="Entry points setup.py">
 
- <h3>9. Jalankan Logic Node</h3>
-  <img src="images/gambar22.png"> 
- </p>
+<p><b>8. Build Ulang Workspace</b></p>
+<img src="images/gambar21.png" alt="Build workspace">
 
- <h3>10. Uji Node (Manual dari Terminal)</h3>
-  <p>Kirim data tekanan:</p>
-   <img src="images/gambar23.png"> 
- </p> 
+<p><b>9. Jalankan Logic Node</b></p>
+<img src="images/gambar22.png" alt="Jalankan node">
+
+<p><b>10. Uji Node (Manual dari Terminal)</b></p>
+
+<p>Kirim data tekanan:</p>
+<img src="images/gambar23.png" alt="Uji kirim data">
+
+  <section>
+  <h2>Troubleshooting & Problem Solving</h2>
+ <p>
+  ⚠️ Tahap ini bertujuan untuk mengidentifikasi dan menangani permasalahan yang muncul selama proses
+   pengembangan Smart Incubator Monitoring System berbasis ESP32 + FSR + Buzzer, sehingga sistem
+   dapat berjalan stabil dan optimal.
+    </p>
+
+  <h3>✅ Tested Solutions – 5 Common Issues</h3>
+
+ <h4>🔴 Problem #1 – Arduino / ESP32 Gagal Dikompilasi</h4>
+ <p><strong>Penyebab:</strong> Board atau library belum terpasang dengan benar.</p>
+ <p><strong>Solusi:</strong></p>
+  <ul>
+     <li>Pastikan board ESP32 Dev Module sudah dipilih dengan benar pada Arduino IDE</li>
+     <li>Instal library sensor FSR jika diperlukan</li>
+     <li>Periksa koneksi kabel USB ke komputer</li>
+    </ul>
+
+ <h4>🔴 Problem #2 – Data FSR Tidak Terkirim ke ROS 2</h4>
+  <p><strong>Penyebab:</strong> Koneksi serial atau konfigurasi rosserial tidak sesuai.</p>
+  <p><strong>Solusi:</strong></p>
+   <ul>
+    <li>Periksa port serial yang digunakan oleh ESP32</li>
+   <li>Pastikan rosserial agent berjalan dan menggunakan port yang benar</li>
+    <li>Pastikan baudrate di ESP32 dan rosserial sama</li>
+    </ul>
+
+  <h4>🔴 Problem #3 – ROS 2 Subscriber / Publisher Tidak Merespons</h4>
+  <p><strong>Penyebab:</strong> Topic tidak aktif atau node belum berjalan.</p>
+ <p><strong>Solusi:</strong></p>
+  <ul>
+   <li>Cek topic yang tersedia dengan <code>ros2 topic list</code></li>
+   <li>Pastikan node FSRLogicNode dijalankan dan subscribe ke topic yang benar</li>
+  <li>Periksa koneksi jaringan jika menggunakan multiple device</li>
+    </ul>
+
+ <h4>🔴 Problem #4 – Buzzer Tidak Berfungsi</h4>
+ <p><strong>Penyebab:</strong> Pin buzzer salah atau logika ROS 2 alarm tidak diterima.</p>
+ <p><strong>Solusi:</strong></p>
+ <ul>
+    <li>Periksa pin digital yang digunakan untuk buzzer</li>
+    <li>Pastikan topic <code>/fsr/alarm</code> diterima oleh node buzzer</li>
+    <li>Gunakan Serial Monitor untuk memantau status FSR dan alarm</li>
+    </ul>
+    
+  <h4>🔴 Problem #5 – Nilai FSR Tidak Stabil / Noise Tinggi</h4>
+  <p><strong>Penyebab:</strong> Sensor FSR rawan noise dan variasi resistansi.</p>
+  <p><strong>Solusi:</strong></p>
+  <ul>
+        <li>Tambahkan filter software (misal rata-rata 3–5 pembacaan)</li>
+        <li>Periksa sambungan kabel dan breadboard</li>
+        <li>Kalibrasi threshold sesuai tekanan yang diinginkan</li>
+    </ul>
+</section>
   
  <p>Cek status tekanan:</p>
  <img src="images/gambar26.png"> 
