@@ -45,7 +45,9 @@
     ul {
       line-height: 1.8;
     }
-    
+  </style>
+</head>
+
 <body>
 
 <header>
