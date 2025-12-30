@@ -42,6 +42,9 @@
     h2 {
       margin-top: 0;
     }
+    h3 {
+      margin-top: 0;
+    }
     ul {
       line-height: 1.8;
     }
@@ -115,8 +118,6 @@ Smart Pressure Alert System dilengkapi dengan buzzer sebagai sistem peringatan d
   <h3>Perangkat Lunak (Software)</h3>
   <p>
   <img src="images/tabel1.png">
-
-<section>
 
 <h2>Tahap I - Environment Setup</h2>
   <p>
